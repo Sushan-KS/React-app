@@ -9,9 +9,9 @@ function App() {
 
   const handleLogin =()=>
   {
-    if(email==="suhan123@gmail.com" && password==="1234")
+    if(email.includes("@")
     {
-      alert("login successful");
+     setIsLoggedIn(true);
     }
     else 
     {
