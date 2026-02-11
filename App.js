@@ -15,11 +15,16 @@ function App() {
     }
     else 
     {
-      alert("invalid credentials");
+      alert("enter valid email");
     }
   }
 
   return (
+    <div>
+  {isLoggedIn ?(
+    <h1>Welcome to Dashboard</h1>
+    ):(
+    
     <div >
     <h2>Login Form</h2>
 
@@ -42,6 +47,8 @@ function App() {
 
     <button onClick={handleLogin}>Login</button>
     
+    </div>
+        )}
     </div>
   );
 }
