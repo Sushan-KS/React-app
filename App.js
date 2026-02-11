@@ -4,7 +4,8 @@ import { useState } from "react";
 function App() {
 
   const [email, setEmail]=useState("");
-  const[password, setPassword]=useState("");
+  const [password, setPassword]=useState("");
+  const [isLoggedIn, setIsLoggedIn]= useState(false); 
 
   const handleLogin =()=>
   {
